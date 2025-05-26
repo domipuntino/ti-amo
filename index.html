@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ti amo</title>
+<style>
+  /* Animazione graduale sfondo arcobaleno */
+  @keyframes rainbowGradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(
+      270deg,
+      #ff0000,
+      #ff7f00,
+      #ffff00,
+      #00ff00,
+      #0000ff,
+      #4b0082,
+      #8b00ff,
+      #ff0000
+    );
+    background-size: 1600% 1600%;
+    animation: rainbowGradient 30s ease infinite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+    padding: 1em;
+  }
+  h1 {
+    font-size: 3em;
+    margin: 0.2em 0;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+  }
+  p {
+    font-size: 1.5em;
+    margin: 1em 0 2em 0;
+    max-width: 80%;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+  }
+  iframe {
+    border-radius: 16px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.4);
+    border: none;
+  }
+</style>
+</head>
+<body>
+  <h1>Ti amo e ti voglio bene 💖</h1>
+  <p>Resto qui, accanto a te, anche quando tutto sembra difficile.</p>
+
+  <iframe 
+    src="https://open.spotify.com/embed/track/0tgVpDi06FyKpA1z0VMD4v" 
+    width="320" 
+    height="80" 
+    allowtransparency="true" 
+    allow="encrypted-media"
+    title="Spotify Player - Perfect Ed Sheeran">
+  </iframe>
+
+</body>
+</html>
